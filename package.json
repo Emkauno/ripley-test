@@ -1,0 +1,24 @@
+{
+  "name": "ripley-test",
+  "version": "1.0.0",
+  "description": "Prueba de selección - Ripley",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel liveserver watch",
+    "liveserver": "live-server",
+    "watch": "node-sass sass/main.scss assets/css/style.css -w",
+    "compile": "node-sass sass/main.scss assets/css/style.css",
+    "prefix": "postcss assets/css/style.css --use autoprefixer -o assets/css/style.css",
+    "compress": "node-sass assets/css/style.css assets/css/style.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
+  },
+  "keywords": [
+    "ripley",
+    "test"
+  ],
+  "author": "Esteban Soto Santiagos",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
