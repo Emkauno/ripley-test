@@ -35,7 +35,9 @@ html {
 
 .nav__links {
   width: 1300px;
-  height: 25px; }
+  height: 25px;
+  display: flex;
+  align-items: center; }
   .nav__links a {
     font-size: 12px;
     color: #78797b;
@@ -1046,12 +1048,12 @@ img.icon-fix {
 
 @font-face {
   font-family: FuturaBold;
-  src: url(../fonts/futuraStdBold.otf); }
+  src: url(../fonts/FuturaStdBold.otf); }
 
 @font-face {
   font-family: FuturaMed;
-  src: url(../fonts/futuraStdMedium.otf); }
+  src: url(../fonts/FuturaStdMedium.otf); }
 
 @font-face {
   font-family: FuturaLight;
-  src: url(../fonts/futuraStdLight.otf); }
+  src: url(../fonts/FuturaStdLight.otf); }
