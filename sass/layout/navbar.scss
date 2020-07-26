@@ -54,6 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         img {
           width: 50px;
           height: 50px;
@@ -74,6 +75,9 @@
       color: var(--color-grey);
     }
     & .login {
+      a {
+        text-decoration: none;
+      }
       h1 {
         font-family: FuturaLight;
         color: var(--color-white);
@@ -130,7 +134,7 @@ nav {
     display: flex;
   }
   & .logo {
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,6 +159,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
     }
 
     img {
@@ -163,7 +168,7 @@ nav {
     }
   }
   & .toggler {
-    width: 15%;
+    width: 13%;
     margin-left: 20px;
     margin-top: 10px;
 
