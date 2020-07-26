@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  user-select: none; }
 
 body {
   overflow-x: hidden; }
@@ -9,6 +10,12 @@ body {
 html {
   box-sizing: border-box;
   font-family: FuturaMed; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
 
 :root {
   --color-black: #0d0d0d;
@@ -65,7 +72,8 @@ html {
     .nav__main .menu a {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-decoration: none; }
       .nav__main .menu a img {
         width: 50px;
         height: 50px;
@@ -75,11 +83,14 @@ html {
         font-size: 15px;
         width: 60px; }
   .nav__main .input {
+    border: none;
     width: 750px;
     height: 45px;
     padding: 10px 20px;
     border-radius: 20px;
     color: var(--color-grey); }
+  .nav__main .login a {
+    text-decoration: none; }
   .nav__main .login h1 {
     font-family: FuturaLight;
     color: var(--color-white);
@@ -123,7 +134,7 @@ nav .nav__desktop .container {
     .nav__mobile {
       display: flex; } }
   .nav__mobile .logo {
-    width: 15%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,12 +155,13 @@ nav .nav__desktop .container {
     .nav__mobile .search-box a {
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-decoration: none; }
     .nav__mobile .search-box img {
       width: 33%;
       height: 100%; }
   .nav__mobile .toggler {
-    width: 15%;
+    width: 13%;
     margin-left: 20px;
     margin-top: 10px; }
     .nav__mobile .toggler a {
