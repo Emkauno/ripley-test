@@ -197,6 +197,10 @@
     width: 57%;
     transform: translateY(40px);
   }
+  @media (max-width: 380px) {
+    width: 53%;
+    transform: translateY(40px);
+  }
 }
 
 .glide__arrow.glide__arrow--left2 {
