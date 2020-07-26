@@ -19,6 +19,8 @@
   &__links {
     width: 1300px;
     height: 25px;
+    display: flex;
+    align-items: center;
     a {
       font-size: 12px;
       color: #78797b;
