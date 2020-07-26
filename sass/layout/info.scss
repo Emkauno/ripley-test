@@ -1,0 +1,409 @@
+#info {
+  height: 950px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 900px) {
+    height: 750px;
+  }
+}
+
+.info {
+  &__header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 900px) {
+      flex-direction: column-reverse;
+      height: 50%;
+    }
+    @media (max-width: 500px) {
+      height: 250px;
+      margin-top: 15px;
+      flex-direction: column-reverse;
+    }
+    &--left {
+      height: 100%;
+      width: 43%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      @media (max-width: 900px) {
+        width: 80%;
+      }
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+      a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+      }
+      p {
+        text-align: right;
+        font-size: 15px;
+        font-family: FuturaBold;
+
+        &.p-desk {
+          display: block;
+          @media (max-width: 900px) {
+            display: none;
+          }
+        }
+        &.p-mb {
+          display: none;
+          @media (max-width: 900px) {
+            display: block;
+          }
+        }
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+        @media (max-width: 500px) {
+          font-size: 14px;
+          text-align: center;
+          line-height: 15px;
+        }
+      }
+    }
+    &--right {
+      height: 100%;
+      width: 55%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 900px) {
+        width: 75%;
+        margin-top: 35px;
+      }
+      @media (max-width: 500px) {
+        margin-top: 0;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__bot {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: 1160px) {
+      height: 55%;
+    }
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+    }
+    &--left {
+      height: 100%;
+      width: 30%;
+      position: relative;
+      @media (max-width: 900px) {
+        width: 100%;
+        height: 43%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+      }
+      @media (max-width: 500px) {
+        height: 15%;
+        padding-left: 20px;
+      }
+
+      img {
+        position: absolute;
+        height: 100%;
+        z-index: 0;
+        @media (max-width: 900px) {
+          width: 100%;
+          height: unset;
+          z-index: 0;
+        }
+      }
+
+      & .info__link {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: -10px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        @media (max-width: 900px) {
+          height: 100%;
+          justify-content: flex-end;
+          padding-right: 5%;
+          background: url(../img/scooters/scooter-title-mb@2x.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-origin: bottom right;
+        }
+        @media (max-width: 500px) {
+          height: 85px;
+          bottom: 18px;
+          justify-content: flex-end;
+          padding-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: var(--color-white);
+          font-family: FuturaBold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          border: 3px solid var(--color-white);
+          padding: 8px 10px;
+          width: 130px;
+          transition: all 0.3s ease;
+          @media (max-width: 900px) {
+            width: 120px;
+            font-size: 12px;
+          }
+          @media (max-width: 500px) {
+            width: 80px;
+            padding: 5px;
+            font-size: 8px;
+            border: 2px solid var(--color-white);
+            margin-right: 15px;
+          }
+          span {
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            @media (max-width: 500px) {
+              margin-bottom: 2px;
+            }
+          }
+          &:hover {
+            color: var(--color-purple);
+            border-color: var(--color-purple);
+          }
+        }
+      }
+    }
+    &--right {
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      position: relative;
+      padding-bottom: 20px;
+
+      @media (max-width: 900px) {
+        width: 90%;
+        height: 85%;
+      }
+
+      @media (max-width: 500px) {
+        width: 90%;
+        height: 75%;
+        margin-top: -17px;
+      }
+
+      & .info__link--productos {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        a {
+          width: 200px;
+          text-decoration: none;
+          color: var(--color-purple);
+          font-family: FuturaBold;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 3px solid var(--color-purple);
+          padding: 8px 10px;
+          transition: all 0.3s ease;
+          &:hover {
+            background: var(--color-purple);
+            color: var(--color-white);
+          }
+        }
+      }
+      & .glide {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &--info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 50px;
+
+      h1 {
+        font-size: 15px;
+        font-family: FuturaBold;
+      }
+      h2 {
+        font-family: FuturaBold;
+        color: var(--color-purple);
+        font-size: 18px;
+      }
+    }
+  }
+}
+.glide__track {
+  height: 100%;
+
+  @media (max-width: 500px) {
+    height: 100%;
+  }
+  & .glide__slides {
+    height: 100%;
+
+    & .glide__slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      @media (max-width: 1160px) {
+        justify-content: flex-start;
+      }
+
+      img {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        @media (max-width: 900px) {
+          height: 100%;
+          width: unset;
+        }
+        @media (max-width: 500px) {
+          height: 85%;
+          width: unset;
+        }
+      }
+    }
+  }
+}
+
+.glide__arrow.glide__arrow--left {
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  border: none;
+  height: 100%;
+  z-index: 99;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 500px) {
+    transform: scale(0.45);
+    &:hover {
+      transform: scale(0.4);
+    }
+  }
+}
+.glide__arrow.glide__arrow--right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  height: 100%;
+  z-index: 99;
+  cursor: pointer;
+  outline: none;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 500px) {
+    transform: scale(0.45);
+    &:hover {
+      transform: scale(0.4);
+    }
+  }
+}
+.carousel__item {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 75%;
+
+    &.img-fix {
+      height: 70%;
+    }
+  }
+  h1 {
+    font-family: FuturaBold;
+    font-size: 14px;
+  }
+  h2 {
+    font-family: FuturaBold;
+    font-size: 18px;
+    color: var(--color-purple);
+    text-align: center;
+  }
+}
+.scooter-desk {
+  display: block;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.scooter-mb {
+  display: none;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+
+.info__top {
+  &-desk {
+    display: block;
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+
+  &-mb {
+    display: none;
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+}
