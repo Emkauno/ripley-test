@@ -1060,6 +1060,10 @@ img.icon-fix {
   .glide-text {
     margin-bottom: -50px; } }
 
+.glide2 {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y; }
+
 @font-face {
   font-family: FuturaBold;
   src: url(../fonts/FuturaStdBold.otf); }

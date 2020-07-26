@@ -261,3 +261,8 @@
     margin-bottom: -50px;
   }
 }
+
+.glide2 {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
