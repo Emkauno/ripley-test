@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  user-select: none; }
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   overflow-x: hidden; }
@@ -1002,7 +1003,7 @@ img.icon-fix {
       transform: translateX(20px); } }
   @media (max-width: 500px) {
     .glide__arrows2 {
-      width: 50%;
+      width: 57%;
       transform: translateY(40px); } }
 
 .glide__arrow.glide__arrow--left2 {
